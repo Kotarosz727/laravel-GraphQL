@@ -37,7 +37,6 @@ type Mutation {
 }
 
 input CreateTaskInput{
-    user_id: Int! 
-    name: String! @rules(apply: ["string", "min:3"])
+    title: String! @rules(apply: ["string", "min:3"])
 }
 
